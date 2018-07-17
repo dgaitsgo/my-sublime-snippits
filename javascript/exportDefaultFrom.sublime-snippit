@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+export { default } from './${TM_FILEPATH/.+\/(.+)\/[^\\]*/$1/gm}'
+]]></content>
+	<description>
+		`import Button from '/components/Button/Button'` is redundant
+		so in Button.js, I'll write at the bottom `export default Button` and make an index.js
+		where I export { default } from './Button'.
+		But that get's annoying for every component. Hence, this snippit.
+	</description>
+	<!-- triggered by tab  -->
+	<tabTrigger>edf</tabTrigger>
+	<!-- Only in js files -->
+	<scope>source.js</scope>
+</snippet>
